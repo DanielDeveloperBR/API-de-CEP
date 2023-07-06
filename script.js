@@ -4,7 +4,7 @@ form.addEventListener("submit", (evento) => {
     const cep = form.cep.value
     //Usando a api do viacep com o framework do ajax
     $.ajax({
-        url: `http://viacep.com.br/ws/${cep}/json/`, success: function (result) {
+        url: `https://viacep.com.br/ws/${cep}/json/`, success: function (result) {
             //Criando um paragrafo
             const endereco = document.createElement("p")
             const cidade = document.createElement("p")
