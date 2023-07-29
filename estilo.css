@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*Paleta de cores do site*/
+:root{
+    --fundo: #363E8F;
+    --section: #8891E7;
+    --formulario: #E0BB34;
+    --botoes: #FFE06E;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--fundo);
+    color: #000000;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    max-width: 100%;
+    background-color: var(--fundo);
+    margin: 0;
+
+}
+/*###############
+Cabeçalho
+###############*/
+header h1 {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+main section h3 {
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.445);
+    padding: 10px;
+    background-color: var(--formulario);
+    border-radius: 10px;
+    text-align: center;
+    margin: 15px auto;
+}
+
+section {
+    background-color: var(--section);
+    padding: 15px;
+    box-shadow: 4px 4px 11px 0px rgba(0, 0, 0, 0.301);
+    border-radius: 15px;
+}
+
+section form {
+    margin: auto;
+    background-color: var(--formulario);
+    border-radius: 15px;
+    padding: 15px;
+}
+p{
+    font-weight: bolder;
+    margin: 15px auto;
+}
+
+input {
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+    width: 100%;
+    margin-top: 5px;
+}
+/*###############
+Botao de enviar
+###############*/
+input[type="submit"] {
+    background-color: var(--botoes);
+    padding: 10px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: 10px;
+}
+input[type="submit"]:hover{
+    background-color: var(--section);
+    cursor: pointer;
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: var(--section);
+    margin-top: 20px;
+    width: 100%;
+    font-style: italic;
+}
+footer > a{
+    text-decoration: none;
+    color: black;
+}
+footer > a:hover{
+    color: var(--fundo);
+    text-decoration: underline;
+}
